@@ -9201,9 +9201,9 @@
     return d.getMilliseconds();
   } ], [ ":%S", function(d) {
     return d.getSeconds();
-  } ], [ "%I:%M", function(d) {
+  } ], [ "%H:%M", function(d) {
     return d.getMinutes();
-  } ], [ "%I %p", function(d) {
+  } ], [ "%H:%M", function(d) {
     return d.getHours();
   } ], [ "%a %d", function(d) {
     return d.getDay() && d.getDate() != 1;
@@ -9230,9 +9230,9 @@
     return d.getUTCMilliseconds();
   } ], [ ":%S", function(d) {
     return d.getUTCSeconds();
-  } ], [ "%I:%M", function(d) {
+  } ], [ "%H:%M", function(d) {
     return d.getUTCMinutes();
-  } ], [ "%I %p", function(d) {
+  } ], [ "%H:%M", function(d) {
     return d.getUTCHours();
   } ], [ "%a %d", function(d) {
     return d.getUTCDay() && d.getUTCDate() != 1;

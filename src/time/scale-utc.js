@@ -10,8 +10,8 @@ var d3_time_scaleUtcMethods = d3_time_scaleLocalMethods.map(function(m) {
 var d3_time_scaleUtcFormat = d3_time_formatUtc.multi([
   [".%L", function(d) { return d.getUTCMilliseconds(); }],
   [":%S", function(d) { return d.getUTCSeconds(); }],
-  ["%I:%M", function(d) { return d.getUTCMinutes(); }],
-  ["%I %p", function(d) { return d.getUTCHours(); }],
+  ["%H:%M", function(d) { return d.getUTCMinutes(); }],
+  ["%H:%M", function(d) { return d.getUTCHours(); }],
   ["%a %d", function(d) { return d.getUTCDay() && d.getUTCDate() != 1; }],
   ["%b %d", function(d) { return d.getUTCDate() != 1; }],
   ["%B", function(d) { return d.getUTCMonth(); }],
